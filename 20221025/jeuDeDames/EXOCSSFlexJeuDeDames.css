@@ -1,0 +1,89 @@
+#jeu_dames {
+    width: 900px;
+    height: 600px;
+    justify-content: center;
+    display: grid;
+    grid-column: 600px 200px;
+    grid-row: 250px 250px;
+    column-gap: 50px;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+        "damier bouton"
+        "damier jouer";
+}
+
+#damier {
+    width: 550px;
+    height: 550px;
+    grid-area: damier;
+    border: 15px ridge #a52a2a;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, fr);
+}
+
+#damier div {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a {
+    background-color: #f5deb3;
+}
+
+.b {
+    background-color: black;
+}
+
+.c {
+    background-color: black;
+}
+
+.d {
+    background-color: #f5deb3;
+}
+
+#damier .pion_blanc {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#damier .pion_noir {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#bouton {
+    width: 210px;
+    height: 210px;
+    background-color: #fffa9c;
+    border: 15px ridge #a52a2a;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    grid-area: bouton;
+    margin-top: 60px;
+    justify-content: contain;
+}
+
+#jouer {
+    width: 180px;
+    height: 180px;
+    background-color: #ffffff;
+    border: 15px ridge #a52a2a;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    grid-area: jouer;
+    margin-bottom: 60px;
+}

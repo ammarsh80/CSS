@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: auto;
+    height: auto;
+    background-image: url(Capture.PNG);
+}
+
+main {
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 800px;
+    height: 510px;
+    background-color: #f8f8f6;
+    display: grid;
+    grid-template-columns: 800px;
+    grid-template-rows: 60px 140px 100px 50px 150px 10px;
+    grid-template-areas:
+        "gestion"
+        "text1"
+        "text2"
+        "lien"
+        "boutons";
+
+    justify-content: center;
+    align-items: center;
+}
+
+.gestion {
+    grid-area: gestion;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color: #97a800;
+    height: 60px;
+}
+
+#croix {
+    width: 30px;
+    height: 30px;
+    background-color: #76766d;
+    position: absolute;
+    margin-left:750px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text1 {
+    grid-area: text1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #8c7e81;
+    font-size: 1.2em;
+
+}
+
+.text2 {
+    grid-area: text2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #8c7e81;
+    font-size: 1.2em;
+
+
+}
+
+.lien {
+    grid-area: lien;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4e412e;
+    font-size: 1.2em;
+}
+
+.boutons {
+    grid-area: boutons;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.choix,
+.refuser,
+.eccepter{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.15em;
+}
+.choix {
+    width: 300px;
+    height: 50px;
+    background-color: #f29c06;
+}
+.refuser {
+    width: 200px;
+    height: 50px;
+    background-color: #f29c06;
+}
+.eccepter {
+    width: 200px;
+    height: 50px;
+    background-color: #97a800;
+}

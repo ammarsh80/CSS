@@ -1,0 +1,136 @@
+/* Début_Partie_1*/
+$p_color: red !default;
+$s_color: blue !default;
+
+.fig_1 {
+    background-color: $p_color;
+    width: 50px;
+    height: 50px;
+}
+
+.fig_2 {
+    background-color: $s_color;
+    width: 50px;
+    height: 50px;
+}
+
+.fig_3 {
+    background-color: $p_color;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.fig_4 {
+    background-color: $s_color;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Fin_Partie_1*/
+
+/* Début_Partie_2*/
+
+@import 'mixin';
+
+.fig_1,
+.fig_2 {
+    @include marge10;
+}
+
+.fig_3,
+.fig_4 {
+    @include marge20;
+}
+
+/* Fin_Partie_2*/
+
+/* Début_Partie_3*/
+@import 'mixin';
+
+.fig_1 {
+    @include mixin.square (200px, red, true);
+    background-color: blue;
+}
+
+.fig_2 {
+    @include square;
+    background-color: red;
+
+}
+
+.fig_3 {
+    @include cercle;
+    background-color: blue;
+}
+
+.fig_4 {
+    @include cercle;
+    background-color: red;
+}
+
+/* fin_Partie_3*/
+
+/* Début_Partie_4*/
+@import 'mixin';
+@import 'variables';
+
+body {
+    @include myflex
+}
+
+.fig_1 {
+    @include mixin.square (200px, blue, true);
+    background-color: $primary_color;
+
+}
+
+.fig_2 {
+    @include mixin.square (200px, blue, true);
+    background-color: $secondary_color;
+
+}
+
+.fig_3 {
+    @include mixin.circle (200px, blue, true);
+    background-color: $primary_color;
+
+}
+
+.fig_4 {
+    @include mixin.circle (200px, blue, true);
+    background-color: $secondary_color;
+
+}
+
+/* fin_Partie_4*/
+#card_1 {
+    .card_maj {
+        @include mixin.square (200px, blue, true);
+
+    }
+
+    .card_min {
+        @include mixin.square (200px, blue, false);
+
+    }
+}
+
+#card_2 {
+    .card_maj {
+        @include mixin.circle (200px, blue, true);
+        position: absolute;
+
+
+    }
+
+    .card_min {
+        @include mixin.circle (200px, blue, false);
+        position: absolute;
+        left: 85px;
+        top: -28px;
+
+
+    }
+}

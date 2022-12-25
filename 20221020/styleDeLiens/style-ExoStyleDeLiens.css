@@ -1,0 +1,59 @@
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: #FCB941;
+}
+
+a:hover {
+    background-color: #7E3661;
+    color: white;
+}
+
+#box {
+    border: 1px solid black;
+    margin-left: 30px;
+    width: 200px;
+    padding: 10px;
+}
+
+.lettrine:first-letter {
+    margin-right: 5px;
+    font-size: 4em;
+}
+
+h1:before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    background: url(arrow.gif) no-repeat;
+    background-size: 100%;
+}
+
+h2:after {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    background: url(new.png) no-repeat;
+    background-size: 100%;
+  }
+  ul :nth-child(even) { background-color: #9cf;}
+
+  div[title*="roi"] {background-color: #9cf;}
+
+  .lapin {
+    border: black 4px solid;
+    width: fit-content;
+    height: fit-content;
+    margin: 200px;
+  }
+  img {
+    margin: 10px;
+    border: red 1px solid;
+  }
+  .transformation {
+    transform: skew(45deg)
+  }

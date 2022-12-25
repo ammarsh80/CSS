@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --my_violet: #424bb2;
+    --my_red: #e41413;
+    --my_gray: #6f6f6f;
+    --my_green: #65b642;
+    --my_white: #fff;
+    --my_black: #000;
+}
+
+body {
+    margin: 50px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 400px);
+    grid-template-rows: 1fr;
+    grid-template-areas: container1 container3 container2 container4;
+}
+
+a {
+    filter: opacity(0.9em);
+    text-decoration: none;
+  }
+.container1,
+.container2,
+.container3,
+.container4 {
+    width: 350px;
+    height: 430px;
+    background-color: var(--my_white);
+    box-shadow: 1px 1px 5px;
+}
+
+.small_contenair {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.mventes
+ {
+    width: 200px;
+    height: 35px;
+    background-color: var(--my_red);
+    border-radius: 25px;
+    color: var(--my_white);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+    display: flex;
+    margin-left: -20px;
+    margin-top: -10px;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+
+}
+
+.image_item1 {
+    width: 170px;
+    height: 120px;
+    margin-top: 60px;
+    margin-bottom: 25px;
+
+}
+
+.image_item2 {
+    width: 190px;
+    height: 80px;
+    margin-top: 70px;
+    margin-bottom: 75px;
+
+}
+.image_item3{
+    width: 170px;
+    height: 170px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+
+}
+.image_item4 {
+    width: 206px;
+    height: 160px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+
+}
+.image_madein1 {
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    margin-left: 70px;
+    top: 80px;
+}
+
+.image_madein2 {
+    width: 54px;
+    height: 40px;
+    position: absolute;
+    margin-left: 60px;
+    top: 90px;
+}
+.name_item {
+    text-transform: capitalize;
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-size: 1em;
+    color: var(--my_black);
+
+}
+
+.code_item {
+    text-transform: uppercase;
+    color: var(--my_gray);
+    margin-bottom: 15px;
+
+}
+
+.price {
+    color: var(--my_violet);
+    font-size: 2.1em;
+    font-weight: bold;
+
+
+}
+
+.fiche {
+    width: 200px;
+    height: 40px;
+    background-color: var(--my_violet);
+    border-radius: 25px;
+    color: var(--my_white);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+
+}
+
+.diponibility {
+    text-transform: capitalize;
+    color: var(--my_green);
+    word-spacing: 5px;
+}
+
+.web {
+    text-transform: capitalize;
+    color: var(--my_gray);
+}

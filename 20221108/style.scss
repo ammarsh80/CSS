@@ -1,0 +1,23 @@
+.circle { 
+  $size: 150px; 
+  width: $size; 
+  height: $size; 
+  border-radius: $size / 2; 
+} 
+
+$base-color: #c6538c;
+$border-dark: rgba ($base-color, 0.88);
+
+.alert {
+  border: 1px solid $border-dark;
+}
+
+$global-variable: global value;
+.content {
+  $local-variable: global value;
+  global: $global-variable;
+  local: $local-variable;
+}
+.sidebar {
+  global: $global-variable
+}

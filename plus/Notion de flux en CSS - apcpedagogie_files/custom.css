@@ -1,0 +1,45 @@
+/* Menu gauche*/
+/* CSS Document */
+/* NAVIGATION GAUCHE */
+#navgauche {float:right; width:240px; font-size:0.80em;background-image: url(/wp-content/uploads/tc_stylesheets/images/fond_menuoutil_bas.png);
+	background-repeat: no-repeat;
+	background-position:right bottom;margin-top:-8px;margin-right:-10px;}
+#navgauche a {color:#00257a; text-decoration:none;-webkit-transition-property:#00257a; -webkit-transition-duration:0.5s; -moz-transition-property:#00257a; -moz-transition-duration:0.5s; transition-property:#00257a; transition-duration:0.5s;}
+#navgauche a:hover {color:#ffa402;}
+
+#fondmenu {
+	width:280px;
+	background-image: url(/wp-content/uploads/tc_stylesheets/images/fond_menuoutil_haut.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-top:15px;
+    margin-top:6px;
+    margin-right: -10px
+}
+div.sousmenu::before {
+  content: "Contenu du chapitre";
+  margin-left:36px;
+  font-weight: bold;
+text-align: center;
+font-size:1.09em;
+}
+div.sousmenu {    
+    background-image: url(/wp-content/uploads/tc_stylesheets/images/fond_menuoutil_centre.png);
+    background-position: left top;
+    background-repeat: repeat-y;
+   margin-bottom: 19px;
+}
+.sousmenu { padding:-25px 0 0 -8px; }
+.sousmenu ul li {
+    padding:4px 0px 4px 14px; 
+    background-image:url(/wp-content/uploads/tc_stylesheets/images/img_puce1.png); 
+    background-repeat:no-repeat; 
+    background-position:0 0.1em; 
+    line-height:1.4em; 
+    width:190px; 
+    list-style-type: none;
+margin-bottom: 4px;
+}
+
+.sousmenu ul li:hover { background-image:url(/wp-content/uploads/tc_stylesheets/images/img_pucehover.png); background-repeat:no-repeat; background-position:0 -0.0em; }
+.sousmenu ul li.act { background-image:url(/wp-content/uploads/tc_stylesheets/images/img_pucehover.png); background-repeat:no-repeat; background-position:0 0.0em; }

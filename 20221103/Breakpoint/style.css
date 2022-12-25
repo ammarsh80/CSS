@@ -1,0 +1,28 @@
+@media screen and (max-width: 600px) {
+    div {
+        background-color: red;
+        width: 100px;
+        height: 200px;
+        border: 3px solid black;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    div {
+        background-color: yellow;
+        width: 200px;
+        height: 400px;
+        border: 3px solid green;
+
+    }
+}
+
+@media screen and (min-width: 900px) {
+    div {
+        background-color: blue;
+        width: 300px;
+        height: 600px;
+        border: 3px solid black;
+
+    }
+}

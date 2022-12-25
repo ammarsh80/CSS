@@ -1,0 +1,61 @@
+@mixin marge10($margin: 10px) {
+    margin: ($margin);
+}
+
+
+@mixin marge20($margin: 20px) {
+    margin: ($margin);
+}
+
+
+
+@mixin square ($size, $bgc_value, $square_maj:true) {
+    background-color: $bgc_value;
+    background: linear-gradient(to right, $color1, $color2);
+
+    @if ($square_maj) {
+        width: $size;
+        height: $size;
+    }
+
+    @else {
+        width: calc($size/2);
+        height: calc($size/2);
+    }
+}
+
+@mixin circle ($size, $bgc_value, $circle_maj:true) {
+    background-color: $bgc_value;
+    border-radius: 50%;
+
+    @if ($circle_maj) {
+        width: $size;
+        height: $size;
+    }
+
+    @else {
+        width: calc($size/1.5);
+        height: calc($size/1.5);
+    }
+}
+
+@mixin myflex ($direction: false) {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+
+    @if $direction {
+        flex-direction: column;
+    }
+}
+
+@mixin flag ($circle: false) {
+    width: 100px;
+    height: 100px;
+
+    @if $circle {
+        border-radius: 50%;
+
+    }
+}

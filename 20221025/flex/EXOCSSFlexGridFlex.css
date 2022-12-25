@@ -1,0 +1,66 @@
+/* une reset simple */
+* {    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header {
+    width: 800px;
+    height: 90px;
+    background-color: #c10f0f;
+}
+
+#container {
+    width: 800px;
+    height: 400px;
+}
+
+.section11,
+.section12,
+.section13,
+.section14,
+.section15 {
+    width: 90px;
+    height: 90px;
+    background-color: #a82cfe;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.section21,
+.section22,
+.section23,
+.section24,
+.section25,
+.section26,
+.section27,
+.section28 {
+    width: 90px;
+    height: 90px;
+    background-color: #2095da;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.footer1 {
+    width: 78%;
+    height: 100px;
+    background-color: #fdc300;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}

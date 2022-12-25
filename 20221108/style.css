@@ -1,0 +1,18 @@
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+}
+
+.alert {
+  border: 1px solid rgba #c6538c, 0.88;
+}
+
+.content {
+  global: global value;
+  local: global value;
+}
+
+.sidebar {
+  global: global value;
+}/*# sourceMappingURL=style.css.map */

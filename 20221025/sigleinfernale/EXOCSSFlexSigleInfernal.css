@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#sigle {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(17, 50px);
+    grid-template-rows: repeat(15, 50px);
+}
+
+#rect1 {
+    grid-area: 1 / 1 / 3 / 15;
+    background-color: #d5e8d4;
+    border: 5px solid #96ca93;
+}
+
+#rect2 {
+    grid-area: 1 / 16 / 13 / 18;
+    background-color: #d5e8d4;
+    border: 5px solid #96ca93;
+}
+
+#rect3 {
+    grid-area: 14 / 4 / 18 / 18;
+    background-color: #d5e8d4;
+    border: 5px solid #96ca93;
+}
+
+#rect4 {
+    grid-area: 4 / 1 / 18 / 3;
+    background-color: #d5e8d4;
+    border: 5px solid #96ca93;
+
+}
+
+#rect5 {
+    grid-area: 4 / 4 / 6 / 12;
+    background-color: #dae8fc;
+    border: 5px solid #b0bac8;
+}
+
+#rect6 {
+    grid-area: 4 / 13 / 10 / 15;
+    background-color: #dae8fc;
+    border: 5px solid #b0bac8;
+}
+
+#rect7 {
+    grid-area: 11 / 7 / 13 / 15;
+    background-color: #dae8fc;
+    border: 5px solid #b0bac8;
+}
+
+#rect8 {
+    grid-area: 11 / 7 / 13 / 15;
+    background-color: #dae8fc;
+    border: 5px solid #b0bac8;
+}
+
+#rect9 {
+    grid-area: 7 / 4 / 13 / 6;
+    background-color: #dae8fc;
+    border: 5px solid #b0bac8;
+}
+
+#rect10 {
+    grid-area: 7 / 7 / 10 / 12;
+    background-color: #ffe6cc;
+    border: 5px solid #dbccbc;
+}

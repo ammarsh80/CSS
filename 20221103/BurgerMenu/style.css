@@ -1,0 +1,80 @@
+body {
+    background-color: black;
+}
+
+ul {
+    color: white;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+
+#hidden {
+    display: none;
+}
+
+
+ul {
+    color: white;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+
+}
+
+a {
+    text-decoration: none;
+    width: 100%;
+    height: 3x;
+
+}
+
+.burger {
+    position: fixed;
+    width: 50px;
+    height: 50x;
+    background-color: black;
+    position: absolute;
+}
+
+
+
+
+@media screen and (max-width: 690px) {
+
+    #hidden {
+        display: none;
+
+
+    }
+
+    ul {
+        display: none;
+    }
+
+    #hidden:checked+ul {
+        display: block;
+        cursor: pointer;
+
+
+
+    }
+
+    .bar_blan {
+        display: block;
+        background-color: white;
+        width: 100px;
+        height: 15px;
+        border-radius: 20px;
+        margin-top: 8px;
+        margin-left: 10px;
+    }
+}

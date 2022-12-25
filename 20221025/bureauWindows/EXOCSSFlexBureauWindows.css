@@ -1,0 +1,279 @@
+/* un simple reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sans Flex
+
+
+#all {
+    background-color: darkblue;
+    padding: 10px;
+}
+
+#calendrier {
+    background-color: lightblue;
+    padding: 10px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+#courrier {
+    background-color: lightblue;
+    padding: 10px;
+    display: inline-block;
+    width: 225px;
+    height: 100px;
+}
+
+#xbox
+ {
+    background-color: lightblue;
+    padding: 10px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+#groove,
+#films {
+    background-color: lightblue;
+    padding: 10px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+#edge,
+#photos,
+#cortana {
+    background-color: lightblue;
+    padding: 10px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+#solitaire
+ {
+    background-color: lightblue;
+    padding: 10px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+#wi,
+#rouge {
+    background-color: lightblue;
+    padding: 10px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+#paris,
+#assistant,
+#twitter {
+    background-color: lightblue;
+    padding: 10px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+#finance {
+    background-color: lightblue;
+    padding: 10px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+#actualite {
+    background-color: lightblue;
+    padding: 10px;
+    display: inline-block;
+    width: 225px;
+    height: 100px;
+}
+#store {
+    background-color: lightblue;
+    padding: 10px;
+    display: inline-block;
+    width: 225px;
+    height: 100px;
+}
+
+#candy {
+    background-color: lightblue;
+    padding: 10px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+#blue
+ {
+    background-color: lightblue;
+    padding: 10px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+#onenote,
+#office {
+    background-color: lightblue;
+    padding: 10px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+
+ */
+#all {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: repeat(4, 100px);
+    text-align: center;
+    font-size: 0.8em;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#courrier {
+    grid-area: 1 / 1 / 1 / 3;
+    background-color: gray;
+    color: white;
+}
+
+#calendrier {
+    grid-area: 1 / 3 / 1 / 5;
+    background-color: violet;
+    color: white;
+}
+
+#photos {
+    grid-area: 1 / 5 / 1 / 6;
+    background-color: green;
+    color: white;
+}
+
+#skype {
+    grid-area: 2 / 1 / 2 / 2;
+    background-color: blue;
+    color: white;
+}
+
+#contacts {
+    grid-area: 2 / 2 / 2 / 3;
+    background-color: red;
+    color: white;
+}
+
+#bourse {
+    grid-area: 2 / 3 / 2 / 5;
+    background-color: lightgreen;
+    color: white;
+}
+
+#explorer {
+    grid-area: 2 / 5 / 2 / 6;
+    background-color: blue;
+    color: white;
+}
+
+#aide {
+    grid-area: 2 / 6 / 2 / 7;
+    background-color: red;
+    color: white;
+}
+
+#liste {
+    grid-area: 3 / 1 / 3 / 2;
+    background-color: red;
+    color: white;
+}
+
+#drive {
+    grid-area: 3 / 2 / 3 / 3;
+    background-color: blue;
+    color: white;
+}
+
+#cartes {
+    grid-area: 3 / 5 / 3 / 6;
+    background-color: violet;
+    color: white;
+}
+
+#sante {
+    grid-area: 3 / 6 / 3 / 7;
+    background-color: red;
+    color: white;
+}
+
+#bureau {
+    grid-area: 4 / 1 / 4 / 3;
+    background-color: green;
+    color: white;
+}
+
+#actu {
+    grid-area: 4 / 5 / 4 / 7;
+    background-color: violet;
+    color: white;
+}
+
+#carre {
+    display: grid;
+    grid-template-columns: 45px 10px 45px;
+    grid-template-rows: 45px 10px 45px;
+    color: white;
+
+}
+
+#carre1 {
+    grid-area: 1 / 1 / 2 / 3;
+    background-color: red;
+    color: white;
+    width: 45px;
+    height: 45px;
+}
+
+#carre2 {
+
+    grid-area: 1 / 3 / 1 / 3;
+    background-color: orange;
+    color: white;
+    width: 45px;
+    height: 45px;
+}
+
+#carre3 {
+    grid-area: 3 / 1 / 3 / 1;
+    background-color: green;
+    color: white;
+    width: 45px;
+    height: 45px;
+}
+
+#carre4 {
+    grid-area: 3 / 3 / 3 / 3;
+    background-color: darkblue;
+    color: white;
+    width: 45px;
+    height: 45px;
+}
